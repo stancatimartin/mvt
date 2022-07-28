@@ -2,12 +2,13 @@ from asyncio.windows_events import NULL
 import re
 from django.shortcuts import render
 from familiares.models import Familiares
+from datetime import datetime
 
 # Create your views here.
 
 
 def create_familiar(request):
-    familiar = Familiares.objects.create(parentesco = 'Primo', nombre = 'Pedro', apellido = 'Perez', hijos = 0)
+    familiar = Familiares.objects.create(parentesco = 'Primo', nombre = 'Pedro', apellido = 'Perez', hijos = 0, fechaDeNacimiento = datetime(1966, 1, 1))
     context = {
         'nuevo_familiar': familiar
     }

@@ -8,3 +8,4 @@ class Familiares(models.Model):
     nombre = models.CharField(max_length=40, null=True,blank=True)
     apellido = models.CharField(max_length=40, null=True,blank=True)
     hijos = models.IntegerField(null=True,blank=True)
+    fechaDeNacimiento = models.DateField(null=True,blank=True)
