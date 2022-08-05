@@ -1,0 +1,10 @@
+{% for product in products %}
+    
+    <h1>Tipo de producto: {{product.type}}</h1>
+    <h2>Marca: {{product.brand}}</h2>
+    <h2>Modelo: {{product.model}}</h2>
+    <h2>Precio: ${{product.price}}</h2>
+    <h2>Descripción: {{product.description}}</h2>
+    <h2>Stock: {{product.stock}}</h2>
+
+{% endfor %}
